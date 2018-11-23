@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import MovieList from './components/MovieList/MovieGrid'
-import * as util from './utils/utils';
+import * as util from './utils';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import withStyles from '@material-ui/core/styles/withStyles';
 
@@ -35,7 +35,7 @@ class App extends Component {
   render() {
     const {classes} = this.props;
     const {moviedata} = this.state;
-    
+
     return (
       <div>
         { moviedata ? <MovieList movies={moviedata.movies} /> : <div className={classes.circular}><CircularProgress /></div>}
