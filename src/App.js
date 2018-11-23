@@ -23,13 +23,16 @@ class App extends Component {
 
   async getMovieData () {
     const _url = util.getURL({sort_by: this.state.sort_by, page: this.state.page});
-    const moviedata = await util.fetchMovieList(_url);
-    this.setState({moviedata});
-    //console.log(this.state)
+    try {
+      const moviedata = await util.fetchMovieList(_url);
+      this.setState({moviedata});
+    } catch (e) {
+      console.log(e);
+    }
   }
 
   componentDidMount () {
-    this.getMovieData()
+    this.getMovieData();
   }
 
   render() {
