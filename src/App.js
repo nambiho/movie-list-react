@@ -21,7 +21,7 @@ class App extends Component {
     page: 0,
   };
 
-  async getMovieData () {
+  getMovieData = async () => {
     const _url = util.getURL({sort_by: this.state.sort_by, page: this.state.page});
     try {
       const moviedata = await util.fetchMovieList(_url);
@@ -35,13 +35,13 @@ class App extends Component {
     this.getMovieData();
   }
 
-  render() {
+  render () {
     const {classes} = this.props;
     const {moviedata} = this.state;
 
     return (
       <div>
-        { moviedata ? <MovieList movies={moviedata.movies} /> : <div className={classes.circular}><CircularProgress /></div>}
+        { moviedata ? <MovieList movies={moviedata.movies} /> : <div className={classes.circular}><CircularProgress /></div> }
       </div>
     );
   }
