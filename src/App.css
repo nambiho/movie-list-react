@@ -1,5 +1,16 @@
 .App {
-  background: white;
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.App--loading {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
 .circularWrap {
