@@ -16,7 +16,7 @@ const getMovieCard = movies => {
 
 const MovieList = ({ movies }) => {
 	return (
-		<div style={{margin: '50px'}}>
+		<div style={{margin: '50px', paddingTop: '50px'}}>
 			<Grid container spacing={24}>
 				{getMovieCard(movies)}
 			</Grid>

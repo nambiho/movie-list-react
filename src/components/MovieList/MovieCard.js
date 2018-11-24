@@ -27,7 +27,7 @@ const styles = theme => {
 			}
 		},
 		column: {
-			width: '30%',
+			width: '35%',
 			boxSizing: 'border-box',
 			textOverflow: 'ellipsis',
 			"&:last-child":{
