@@ -47,8 +47,8 @@ const styles = theme => {
 			position: 'relative',
 			marginTop: '-20%',
 			boxShadow: '-10px 19px 38px rgba(83,83,83,0.3), 10px 15px 12px rgba(80,80,80,0.22)',
-			[`@media screen and (min-width: 320px) and (max-width: 680px) and (orientation: portrait)`]: {
-				top: 0,
+			[`@media screen and (min-width: 320px) and  (orientation: portrait)`]: {
+				top: '20px',
 				left: 0,
 				width: '100%'
 			}
@@ -67,10 +67,11 @@ const styles = theme => {
 
 const MovieCard = ({classes, title, poster, genres, synopsis, key}) => {
 	return (
-		<Grid item xs={12} lg={4} sm={6} key={key}>
+		<Grid item xs={12} lg={6} sm={6} key={key}>
 			<Card classes={{ root: classes.root }}>
 				<CardContent className={ classes.column }>
-					<img src={poster} alt={title} title={title} className={ classes.poster } />
+					{/*<img src={poster} alt={title} title={title} className={ classes.poster } />*/}
+					Image
 				</CardContent>
 
 				<CardContent className={classes.column}>
