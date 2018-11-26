@@ -15,7 +15,7 @@ export const onSortByChange = (sort_by, page) => {
 export const onGetMovieList = props => dispatch => {
 	function RecieveData (data) {
 		return {
-			type: RECEVE_DATA,
+			type: GET_MOVIELIST,
 			moviedata: data,
 		}
 	}
