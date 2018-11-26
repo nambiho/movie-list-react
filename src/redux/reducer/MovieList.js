@@ -6,11 +6,11 @@ const initialState = {
 
 export default function getMovieList(state = initialState, action) {
   switch (action.type) {
-    case types.ACTION_GET_MOVIELIST:
+    case types.GET_MOVIELIST:
       return {
         ...state,
       }
-    case types.ACTION_RECEVE_DATA:
+    case types.RECEVE_DATA:
       const { moviedata } = action;
       return {
         moviedata,
