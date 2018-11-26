@@ -37,7 +37,6 @@ class App extends Component {
   }
 
   componentDidUpdate (prevProps) {
-    //console.log(prevProps, this.props)
     (prevProps.sort_by !== this.props.sort_by || prevProps.page !== this.props.page)
     && this.getMovieData();
   }
@@ -64,7 +63,6 @@ const AppConnect = connect(
       sort_by: state.SortByChange.sort_by,
       page: state.SortByChange.page,
       moviedata: state.MovieList.moviedata,
-      //total: state.MovieList.moviedata.movie_count
     }
   },
   dispatch => {
