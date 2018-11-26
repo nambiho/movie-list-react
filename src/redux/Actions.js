@@ -25,8 +25,4 @@ export const onGetMovieList = props => dispatch => {
 	promise.then((data) => {
 		dispatch(RecieveData(data));
 	})
-	//console.log(promise)
-	return {
-		type: GET_MOVIELIST
-	}
 };

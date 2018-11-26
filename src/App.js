@@ -72,7 +72,7 @@ const AppConnect = connect(
   dispatch => {
     return {
       getMovieList: (argv) => {
-        dispatch( actions.onGetMovieList(argv)(dispatch) )
+        actions.onGetMovieList(argv)(dispatch)
       }
     }
   }
