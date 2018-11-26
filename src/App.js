@@ -47,12 +47,11 @@ class App extends Component {
   }
 
   render () {
-    const { classes, moviedata, total } = this.props;
-    console.log(total)
+    const { classes, moviedata } = this.props;
     return (
       <div>
         { moviedata
-          ? <div><AppBarConnect total={ total } /><MovieList movies={ moviedata.movies } /></div> 
+          ? <div><AppBarConnect /><MovieList movies={ moviedata.movies } /></div> 
           : <div className={classes.circular}><CircularProgress /></div> }
       </div>
     );
@@ -61,12 +60,11 @@ class App extends Component {
 
 const AppConnect = connect(
   state => {
-    console.log(state.MovieList)
     return {
       sort_by: state.SortByChange.sort_by,
       page: state.SortByChange.page,
       moviedata: state.MovieList.moviedata,
-      total: state.MovieList.moviedata.movie_count
+      //total: state.MovieList.moviedata.movie_count
     }
   },
   dispatch => {

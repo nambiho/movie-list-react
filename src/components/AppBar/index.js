@@ -23,5 +23,4 @@ const AppBar = ({ sort_by, page, total, onSortByChange }) => {
 	);
 };
 
-
 export default AppBar;
