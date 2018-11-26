@@ -10,6 +10,7 @@ export default connect(
     return {
       sort_by: state.SortByChange.sort_by,
       page: state.SortByChange.page,
+      total: state.MovieList.moviedata.movie_count
     }
   },
   dispatch => {

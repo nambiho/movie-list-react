@@ -7,7 +7,7 @@ const initialState = {
 
 export default function getSortBy(state = initialState, action) {
   switch (action.type) {
-    case types.ACTION_SORTBY_CHANGE:
+    case types.SORTBY_CHANGE:
       const { sort_by, page } = action;
       return {
         sort_by,
