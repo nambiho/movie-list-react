@@ -1,8 +1,8 @@
-const Error = (err) => {
+const catchError = (err) => {
   return {
     isfail: true,
     message: err.message
-  }
+  };
 }
 
 export const getURL = opt => {
@@ -18,5 +18,5 @@ export const fetchMovieList = url => {
   .then(res => res.json())
   // eslint-disable-next-line no-undef
   .then(json => json.data)
-  .catch(err => Error(err));
+  .catch(err => catchError(err));
 }
