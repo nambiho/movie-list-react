@@ -1,4 +1,4 @@
-export const Error = (err) => {
+const Error = (err) => {
   return {
     isfail: true,
     message: err.message
