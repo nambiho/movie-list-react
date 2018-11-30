@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 
 // AppBarContainer Container를 이용
 // MovieList Container 이용 하지 않음
+// redux
+// dispatch 에서 수행 할 Action을 호출 하여 reducer로 변경 state 값 보낼 준비 
+// -> action 수행 후 데이터 반환 action type이 존재 해야함(데이터 변환,...) 
+// -> reducer에서 state 리턴
 
 import AppBarConnect from './redux/containers/AppBarContainer';
 import MovieList from './components/MovieList';

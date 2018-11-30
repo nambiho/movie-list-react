@@ -16,6 +16,7 @@ export default connect(
   dispatch => {
     return {
       onSortByChange: (e) => {
+        //console.log('dispatch');
         return dispatch(actions.onSortByChange(e.target.value, 1))
       }
     }

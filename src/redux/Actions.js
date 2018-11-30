@@ -4,6 +4,7 @@ export const SORTBY_CHANGE = 'select/SORTBY_CHANGE';
 export const GET_MOVIELIST = 'movielist/GET_MOVIELIST';
 
 export const onSortByChange = (sort_by, page) => {
+	//console.log('Action');
 	return ({
 		type: SORTBY_CHANGE,
 		sort_by,
